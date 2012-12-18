@@ -3,7 +3,7 @@ package test
 
 describe "Tests type inference of the table columns"{
 	def myTable {
-		| value          |
+		| MyEnum value   |
 		| MyEnum::VALUE1 |
 		| MyEnum::VALUE2 |
     }		
@@ -11,6 +11,7 @@ describe "Tests type inference of the table columns"{
 	fact "Table column type get inferred by the stand-alone compile correctly" {
 		myTable.forEach [
 			acceptPruefungsArt(value)
+			throw new RuntimeException
 		]
 	}
 	

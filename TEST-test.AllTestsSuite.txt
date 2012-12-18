@@ -1,0 +1,32 @@
+Testsuite: test.AllTestsSuite
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0,031 sec
+
+Testcase: Table column type get inferred by the stand-alone compile correctly took 0,015 sec
+	FAILED
+myTable failed
+
+        | value        |
+        | <VALUE1>     | ✘     (1)
+        | <VALUE2>     | ✘     (2)
+
+(1) java.lang.RuntimeException
+(2) java.lang.RuntimeException
+junit.framework.AssertionFailedError: myTable failed
+
+        | value        |
+        | <VALUE1>     | ✘     (1)
+        | <VALUE2>     | ✘     (2)
+
+(1) java.lang.RuntimeException
+(2) java.lang.RuntimeException
+	at test.TestsTypeInferenceOfTheTableColumnsSpec$1.apply(TestsTypeInferenceOfTheTableColumnsSpec.java:35)
+	at test.TestsTypeInferenceOfTheTableColumnsSpec$1.apply(TestsTypeInferenceOfTheTableColumnsSpec.java:32)
+	at org.jnario.lib.ExampleTableIterators.perform(ExampleTableIterators.java:55)
+	at org.jnario.lib.ExampleTableIterators.forEach(ExampleTableIterators.java:34)
+	at test.TestsTypeInferenceOfTheTableColumnsSpec._tableColumnTypeGetInferredByTheStandAloneCompileCorrectly(TestsTypeInferenceOfTheTableColumnsSpec.java:39)
+	at org.jnario.runner.ExampleRunner.runChild(ExampleRunner.java:101)
+	at org.jnario.runner.ExampleGroupRunner.runChild(ExampleGroupRunner.java:236)
+	at org.jnario.runner.ExampleGroupRunner.runChild(ExampleGroupRunner.java:1)
+	at org.jnario.runner.ExampleGroupRunner.runChild(ExampleGroupRunner.java:236)
+	at org.jnario.runner.ExampleGroupRunner.runChild(ExampleGroupRunner.java:1)
+

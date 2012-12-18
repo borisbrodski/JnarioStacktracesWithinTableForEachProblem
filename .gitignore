@@ -1,3 +1,4 @@
 TEST-*.xml
 xtend-gen/
 bin/
+build/

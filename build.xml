@@ -81,7 +81,7 @@
 			<classpath refid="test-classpath" />
 
 			<test name="test.AllTestsSuite">
-				<formatter type="xml" />
+				<formatter type="plain" />
 			</test>
 			<jvmarg value="-Dfile.encoding=UTF8" />
 		</junit>
